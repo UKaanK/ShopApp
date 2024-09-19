@@ -33,4 +33,10 @@ class CartModel extends ChangeNotifier {
     }
     return totalPrice.toStringAsFixed(2);
   }
+
+  // Test için public bir metod ekleyin
+  void setTestShopItems(List<Map<String, dynamic>> items) {
+    _shopItems = items;
+    notifyListeners();
+  }
 }
